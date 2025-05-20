@@ -1,3 +1,5 @@
 __pycache__/
 output_sketches/
 U2Net_/
+
+target_images/CUB_200_2011/*

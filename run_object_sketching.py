@@ -50,7 +50,7 @@ if not os.path.isfile(f"{abs_path}/U2Net_/saved_models/u2net.pth"):
     sp.run(["gdown", "https://drive.google.com/uc?id=1ao1ovG1Qtx4b7EoskHXmi2E9rp5CHLcZ",
            "-O", "U2Net_/saved_models/"])
 
-test_name = os.path.splitext(args.target_file)[0]
+test_name = os.path.splitext(args.target_file)[0].split("/")[-1]
 output_dir = f"{abs_path}/output_sketches/{test_name}/"
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
